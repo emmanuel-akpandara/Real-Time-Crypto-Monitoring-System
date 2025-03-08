@@ -48,7 +48,16 @@ The repository contains the following key files:
    nohup python3 consumer.py &
    ```
 ## Crypto stored in Cassandra
-   <img src="images/crypto table.png" width="800">
+<img src="images/crypto_table.png" width="800">
+
+This table stores cryptocurrency exchange rate data collected from the Alpha Vantage API. Below is an explanation of each field:
+
+- **timestamp** *(TEXT)* – The date and time when the exchange rate was retrieved.  
+- **from_currency** *(TEXT)* – The cryptocurrency being exchanged (e.g., BTC, ETH).  
+- **to_currency** *(TEXT)* – The fiat currency or another cryptocurrency being compared against (e.g., USD, EUR).  
+- **exchange_rate** *(FLOAT)* – The current exchange rate at the time of retrieval.  
+- **bid_price** *(FLOAT)* – The highest price a buyer is willing to pay for the cryptocurrency.  
+- **ask_price** *(FLOAT)* – The lowest price a seller is willing to accept for the cryptocurrency.  
 
 ## Future Improvements
 - **Visualization Dashboard**: Implement a **Grafana** or **Streamlit** dashboard for real-time monitoring.
