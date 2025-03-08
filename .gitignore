@@ -1,0 +1,18 @@
+# Ignore environment files (API keys, secrets)
+.env
+config.json
+
+# Ignore Kafka logs and installation files
+kafka/
+kafka*
+logs/
+*.log
+
+# Ignore Python virtual environment (if using)
+venv/
+__pycache__/
+
+# Ignore system files
+.DS_Store
+*.swp
+.out

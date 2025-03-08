@@ -1,0 +1,24 @@
+CREATE KEYSPACE IF NOT EXISTS crypto WITH replication = {'class':'SimpleStrategy','replication_factor':1};
+USE crypto
+CREATE TABLE IF NOT EXISTS crypto_prices ()
+CREATE TABLE IF NOT EXISTS crypto_prices (timestamp text, from_currency text, to_currency text, exchange_rate float, bid_price float, ask_price float, PRIMARY KEY (timestamp, from_currency, to_currency));
+USE crypto CREATE TABLE IF NOT EXISTS crypto_prices () CREATE TABLE IF NOT EXISTS crypto_prices (timestamp text, from_currency text, to_currency text, exchange_rate float, bid_price float, ask_price float, PRIMARY KEY (timestamp, from_currency, to_currency));
+USE crypto;
+CREATE TABLE IF NOT EXISTS crypto_prices (
+    timestamp text,
+    from_currency text,
+    to_currency text,
+    exchange_rate float,
+    bid_price float,
+    ask_price float,
+    PRIMARY KEY (timestamp, from_currency, to_currency)
+);
+CREATE TABLE IF NOT EXISTS crypto_prices (     timestamp text,     from_currency text,     to_currency text,     exchange_rate float,     bid_price float,     ask_price float,     PRIMARY KEY (timestamp, from_currency, to_currency) );
+exit
+USE crypto_prices
+;
+USE crypto_prices ;
+DESCRIBE TABLES;
+USE crypto;
+select * from crypto_prices;
+exit
