@@ -48,7 +48,7 @@ The repository contains the following key files:
    nohup python3 consumer.py &
    ```
 ## Crypto stored in Cassandra
-<img src="images/crypto_table.png" width="800">
+<img src="images/crypto table.png" width="800">
 
 This table stores cryptocurrency exchange rate data collected from the Alpha Vantage API. Below is an explanation of each field:
 
