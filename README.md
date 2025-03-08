@@ -48,7 +48,7 @@ The repository contains the following key files:
    nohup python3 consumer.py &
    ```
 ## Crypto stored in Cassandra
-   <img src="images/crypto table.png" width="500">
+   <img src="images/crypto table.png" width="800">
 
 ## Future Improvements
 - **Visualization Dashboard**: Implement a **Grafana** or **Streamlit** dashboard for real-time monitoring.
